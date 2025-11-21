@@ -1,0 +1,133 @@
+/* ----------------------------------------------------
+   Global Presentation Styling
+---------------------------------------------------- */
+
+.reveal {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 28px;
+  color: #222;
+}
+
+/* Give slides more breathing room */
+.reveal .slides {
+  padding: 20px 0;
+}
+
+/* ----------------------------------------------------
+   Headings
+---------------------------------------------------- */
+
+.reveal h1, 
+.reveal h2, 
+.reveal h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.reveal h1 {
+  font-size: 2.4em;
+}
+
+.reveal h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* ----------------------------------------------------
+   Markdown Slide Tweaks
+---------------------------------------------------- */
+
+section[data-markdown] {
+  text-align: left !important;
+}
+
+section[data-markdown] h2 {
+  margin-bottom: 15px;
+}
+
+/* ----------------------------------------------------
+   Lists & Text
+---------------------------------------------------- */
+
+.reveal ul {
+  margin-top: 15px;
+  margin-left: 35px;
+  line-height: 1.4em;
+}
+
+.reveal li {
+  margin-bottom: 8px;
+}
+
+/* ----------------------------------------------------
+   Code Blocks
+---------------------------------------------------- */
+
+.reveal pre code {
+  font-size: 0.9em;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  display: block;
+}
+
+/* Highlight.js override (optional subtle effect) */
+.hljs {
+  background: #f0f0f0 !important;
+  padding: 15px !important;
+  border-radius: 8px;
+}
+
+/* ----------------------------------------------------
+   Fragments (animations)
+---------------------------------------------------- */
+
+.fragment {
+  transition: all 0.5s ease;
+}
+
+.fragment.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fragment {
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+/* ----------------------------------------------------
+   Math Equations
+---------------------------------------------------- */
+
+.reveal .MathJax {
+  font-size: 1.15em;
+}
+
+/* ----------------------------------------------------
+   Footer Branding (optional)
+---------------------------------------------------- */
+
+.reveal::after {
+  content: "Quarterly Earnings Report";
+  position: fixed;
+  bottom: 18px;
+  right: 25px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* ----------------------------------------------------
+   Responsive Improvements
+---------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .reveal {
+    font-size: 22px;
+  }
+
+  .reveal h1 {
+    font-size: 1.8em;
+  }
+}
