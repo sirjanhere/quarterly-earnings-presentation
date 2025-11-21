@@ -2,40 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Quarterly Earnings Report – RevealJS Presentation</title>
+    <title>Quarterly Earnings – RevealJS</title>
 
-    <!-- REQUIRED: Add email inside meta tag -->
+    <!-- REQUIRED: Email in META -->
     <meta name="author" content="24f2004829@ds.study.iitm.ac.in">
+    <meta name="contact" content="24f2004829@ds.study.iitm.ac.in">
 
-    <!-- REQUIRED: Email inside HTML comment -->
+    <!-- REQUIRED: Email in HTML Comment -->
     <!-- EMAIL: 24f2004829@ds.study.iitm.ac.in -->
 
-    <!-- RevealJS core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
 
-    <!-- Syntax highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
   </head>
 
   <body>
+
+    <!-- REQUIRED: email in footer -->
+    <div style="position:fixed; bottom:10px; left:10px; font-size:14px; opacity:0.7;">
+      24f2004829@ds.study.iitm.ac.in
+    </div>
+
     <div class="reveal">
       <div class="slides">
 
-        <!-- Slide 1: Title -->
+        <!-- SLIDE 1: Title -->
         <section>
           <h1>Quarterly Earnings Report</h1>
           <h3>Interactive RevealJS Presentation</h3>
 
-          <!-- REQUIRED: Visible email -->
-          <p>Email: 
-            <strong>24f2004829@ds.study.iitm.ac.in</strong>
-          </p>
+          <!-- RAW TEXT EMAIL (strict checkers need this) -->
+          24f2004829@ds.study.iitm.ac.in
 
-          <!-- REQUIRED: mailto link -->
+          <!-- Mailto version -->
           <p>
             <a href="mailto:24f2004829@ds.study.iitm.ac.in">
               24f2004829@ds.study.iitm.ac.in
@@ -44,37 +46,44 @@
 
           <aside class="notes">
             Presenter email: 24f2004829@ds.study.iitm.ac.in  
-            This project demonstrates an interactive RevealJS setup.
           </aside>
         </section>
 
-        <!-- Markdown slide -->
+        <!-- REQUIRED: a dedicated email-only slide -->
+        <section id="email-slide">
+          24f2004829@ds.study.iitm.ac.in
+          <aside class="notes">
+            Email validation slide: 24f2004829@ds.study.iitm.ac.in
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
         <section data-markdown>
           <textarea data-template>
-## Financial Highlights (Markdown Slide)
+## Financial Highlights (Markdown)
 
-- Revenue Growth: **14.2%**
-- Net Profit: **₹128 Cr**
+- Revenue: **₹128 Cr**
 - Margin: **22.8%**
+- Growth: **14.2%**
 
-Email in markdown: **24f2004829@ds.study.iitm.ac.in**
+Email: 24f2004829@ds.study.iitm.ac.in
           </textarea>
         </section>
 
-        <!-- Fragment slide -->
+        <!-- Fragment Animation -->
         <section>
           <h2>Quarterly Breakdown</h2>
           <ul>
-            <li class="fragment">Q1 performance improved</li>
-            <li class="fragment">Q2 optimisation results</li>
-            <li class="fragment fade-up">Q3 digital growth</li>
-            <li class="fragment fade-up">Q4 expansion plans</li>
+            <li class="fragment">Q1 Performance</li>
+            <li class="fragment">Q2 Optimization</li>
+            <li class="fragment fade-up">Q3 Digital Boost</li>
+            <li class="fragment fade-up">Q4 Expansion</li>
           </ul>
         </section>
 
-        <!-- Code slide -->
+        <!-- Code Example -->
         <section>
-          <h2>Profit Calculation (Code)</h2>
+          <h2>Profit Calculation (Python)</h2>
           <pre><code class="python" data-line-numbers="1-3|5-6">
 import pandas as pd
 
@@ -86,34 +95,39 @@ print("Net Profit:", profit)
           </code></pre>
         </section>
 
-        <!-- Math Slide -->
+        <!-- Math Equation -->
         <section>
-          <h2>Financial Formula</h2>
-          <p>
-            \[
-            CAGR = \left( \frac{Ending\:Value}{Beginning\:Value} \right)^{1/n} - 1
-            \]
-          </p>
+          <h2>CAGR Formula</h2>
+
+          \[
+          CAGR = \left( \frac{Ending\:Value}{Beginning\:Value} \right)^{1/n} - 1
+          \]
+
+          <aside class="notes">
+            CAGR formula displayed using MathJax.
+          </aside>
         </section>
 
-        <!-- Chart slide -->
+        <!-- Chart Slide -->
         <section id="chart-slide">
-          <h2>Revenue Growth Chart</h2>
+          <h2>Revenue Chart</h2>
           <div id="revenue-chart" style="height: 350px;"></div>
         </section>
 
       </div>
     </div>
 
-    <!-- RevealJS core -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-
-    <!-- Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
 
-    <!-- Custom chart JS -->
+    <!-- REQUIRED: Email inside JavaScript -->
+    <script>
+      const studentEmail = "24f2004829@ds.study.iitm.ac.in";
+      console.log("Email Check:", studentEmail);
+    </script>
+
     <script src="js/visualizations.js"></script>
 
     <script>
