@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quarterly Earnings Report – Interactive RevealJS Presentation</title>
+
+    <!-- RevealJS core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css"
+    />
+
+    <!-- Syntax Highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Slide 1: Title -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <h3>Interactive RevealJS Presentation</h3>
+          <p>Email: <strong>24f2004829@ds.study.iitm.ac.in</strong></p>
+
+          <aside class="notes">
+            Introduce yourself, explain that this presentation is fully web-based,
+            responsive, and made with RevealJS for the demo.
+          </aside>
+        </section>
+
+        <!-- Slide 2: Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+## Key Financial Highlights (Markdown Slide)
+
+- Revenue Growth: **14.2% YoY**
+- Net Profit: **₹128 Cr**
+- Operating Margin: **22.8%**
+- Active Users: **+11% QoQ**
+
+---
+
+### Why RevealJS?
+- Modern web-based presentations
+- Interactive charts and demos
+- Markdown support  
+          </textarea>
+
+          <aside class="notes">
+            This slide demonstrates the markdown parsing capability.
+          </aside>
+        </section>
+
+        <!-- Slide 3: Fragment Animation -->
+        <section>
+          <h2>Quarterly Breakdown</h2>
+          <ul>
+            <li class="fragment">Q1: Strong revenue push from retail banking</li>
+            <li class="fragment">Q2: Increased operational efficiency</li>
+            <li class="fragment fade-up">Q3: Digital transformation impact</li>
+            <li class="fragment fade-up">Q4: Market expansion initiatives</li>
+          </ul>
+
+          <aside class="notes">
+            Click slowly to reveal each point; this shows fragment animation.
+          </aside>
+        </section>
+
+        <!-- Slide 4: Code Highlighting -->
+        <section>
+          <h2>Profit Calculation Code Sample</h2>
+          <pre>
+            <code class="python" data-line-numbers="1-3|5-6">
+import pandas as pd
+
+revenue = 128.4   # in crores
+expenses = 92.1   # in crores
+
+profit = revenue - expenses
+print("Net Profit:", profit)
+            </code>
+          </pre>
+
+          <aside class="notes">
+            Demonstrate syntax highlighting + line highlighting.
+          </aside>
+        </section>
+
+        <!-- Slide 5: Mathematical Equation -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Compound Annual Growth Rate (CAGR):</p>
+
+          <p>
+            \[
+            CAGR = \left( \frac{Ending\:Value}{Beginning\:Value} \right)^{1/n} - 1
+            \]
+          </p>
+
+          <aside class="notes">
+            MathJax handles LaTeX rendering. Good for financial formulas.
+          </aside>
+        </section>
+
+        <!-- Slide 6: End -->
+        <section>
+          <h2>Thank You</h2>
+          <p>Presentation Hosted on GitHub Pages</p>
+
+          <aside class="notes">
+            Wrap up, answer questions, show interactive capabilities.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- RevealJS Core Script -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+    <!-- Markdown Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+
+    <!-- HighlightJS Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+
+    <!-- MathJax Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath],
+      });
+    </script>
+  </body>
+</html>
